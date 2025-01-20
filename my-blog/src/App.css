@@ -1,0 +1,108 @@
+.App {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-color: #f4f4f9;
+}
+
+header {
+  display: flex;
+  justify-content: space-between; /* Space between logo and nav */
+  align-items: center; /* Vertically center */
+  padding: 20px;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center; /* Center logo vertically */
+}
+
+.logo {
+  height: 70px;
+  width: 100px;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  text-align: right; /* Align links to the right */
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 20px;
+  
+}
+
+
+nav ul li a {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+  color: #333; /* Default dark color for text */
+  transition: color 0.3s ease, transform 0.3s ease;
+  position: relative;
+  
+}
+
+nav ul li a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color:green; /* Underline color */
+  left: 0;
+  bottom: -5px;
+  transition: width 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: green; /* Change to orange color on hover */
+  transform: translateY(-5px); /* Slight lift effect */
+}
+
+nav ul li a:hover::after {
+  width: 100%; /* Show the underline on hover */
+}
+
+main {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+h2, h3 {
+  color: #333;
+}
+
+form {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  padding: 10px 20px;
+  background-color: #0073e6;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #005bb5;
+}
+
+/* Optional: Add smooth scrolling for the page */
+html {
+  scroll-behavior: smooth;
+}
