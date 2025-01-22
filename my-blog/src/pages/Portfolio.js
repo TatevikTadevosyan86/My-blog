@@ -2,12 +2,14 @@
 import React, { useEffect, useState } from "react";
 import './portfolio.css'
 
+const backendUrl = process.env.REACT_APP_BACKEND_URL 
+
 const Portfolio = () =>{
     const[projects, setProjects] = useState([]);
 
     useEffect(() =>{
         const fetchProjects = async()=>{
-            const response = await fetch("http://localhost:5000/api/projects")
+            const response = await fetch(`${backendUrl}/api/projects`)
             const data = await response.json();
             setProjects(data)
         };
