@@ -8,6 +8,7 @@ const Portfolio = () =>{
     const[projects, setProjects] = useState([]);
 
     useEffect(() =>{
+        console.log("Backend URL:", backendUrl);  
         const fetchProjects = async()=>{
             const response = await fetch(`${backendUrl}/api/projects`)
             const data = await response.json();
