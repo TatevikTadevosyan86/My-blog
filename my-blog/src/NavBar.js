@@ -8,6 +8,9 @@ const NavBar = () =>{
     const toggleMenu = () =>{
         setIsOpen (!isOpen);
     };
+    const closeMenu = () =>{
+        setIsOpen(false)
+    }
     return(
         <nav>
             <div className="hamburger" onClick={toggleMenu}>
@@ -15,18 +18,18 @@ const NavBar = () =>{
                 <div></div>
                 <div></div>
             </div>
-            <ul>
+            <ul className={isOpen? "show": ""}>
                 <li>
-                    <Link to='/'>Home</Link>
+                    <Link to='/' onClick={closeMenu}>Home</Link>
                 </li>
                 <li>
-                    <Link to='/about'>About</Link>
+                    <Link to='/about' onClick={closeMenu}>About</Link>
                 </li>
                 <li>
-                    <Link to='/portfolio'>Portfolio</Link>
+                    <Link to='/portfolio' onClick={closeMenu}>Portfolio</Link>
                 </li>
                 <li>
-                    <Link to='/contact'>Contact</Link>
+                    <Link to='/contact' onClick={closeMenu}>Contact</Link>
                 </li>
             </ul>
         </nav>

@@ -1,8 +1,49 @@
 /* General Styles */
-.App {
+.App{
   font-family: Arial, sans-serif;
   padding: 20px;
   background-color: #f4f4f9;
+}
+main {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+h2, h3 {
+  color: #333;
+}
+
+form {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  padding: 10px 20px;
+  background-color: #0073e6;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #005bb5;
+}
+
+
+html {
+  scroll-behavior: smooth;
 }
 
 header {
@@ -10,7 +51,6 @@ header {
   justify-content: space-between; /* Space between logo and nav */
   align-items: center; /* Vertically center */
   padding: 20px;
-  position: relative;
 }
 
 .logo-container {
@@ -22,6 +62,8 @@ header {
   height: 70px;
   width: 100px;
 }
+
+
 
 nav {
   position: relative;
@@ -103,4 +145,5 @@ nav ul li a:hover::after {
   .hamburger {
     display: flex; /* Show hamburger menu */
   }
+ 
 }
