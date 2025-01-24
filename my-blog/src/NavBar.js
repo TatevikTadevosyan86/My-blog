@@ -10,7 +10,7 @@ const NavBar = () =>{
     };
     return(
         <nav>
-            <div className="hamburger" onToggle={toggleMenu}>
+            <div className="hamburger" onClick={toggleMenu}>
                 <div></div>
                 <div></div>
                 <div></div>
