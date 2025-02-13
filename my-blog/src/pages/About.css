@@ -54,7 +54,7 @@ body {
   display: flex;
   gap: 1rem;
   margin: 2rem 0;
-  padding: 1rem;
+  padding: 1rem,2rem;
 }
 
 .bottom-section div {
